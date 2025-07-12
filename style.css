@@ -11,6 +11,10 @@
         color: #fdf6e3 !important;
     }
 
+    .page-icons>li>a {
+        color: #fdf6e3 !important;
+    }
+
     h1,h2,h3,h4 {
         background-color: #261f2f !important;
         color: #ffe0ff !important;
@@ -20,51 +24,51 @@
         background:url('https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/surat.svg') no-repeat center center !important;
     }
 
-    #searchPattern, .searchResults, .qFrameMiddle, .suraHeaderFrame, .quranText .ayaNumber, .transText .bism, .quranText, .page-header, .browse.rtl .content, .browse.rtl .header {
-        font-family: "Scheherazade New" !important;
-        font-weight: 400 !important;
+    .ayaNumber, .suraHeaderFrame.ltr, .settings .content select, .settings > *, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
+            font-family: "Iosevka Medium", monospace; !important;
     }
 
-    .settings .content select, .settings, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
+    div.transText .ayaNumber {
 
         font-family: "Iosevka Medium" !important;
     }
 
-
-.circle-player, .circle-player > * {
-    background-color: rgba(0,0,0,0) !important;
-}
-
-
-#circle #disk {
-
-    fill: #fdf6e3 !important;
-}
+    #searchPattern, .searchResults, .qFrameMiddle, .suraHeaderFrame, .transText .bism, .quranText, .page-header, .browse.rtl .content, .browse.rtl .header {
+        font-family: "Scheherazade New" !important;
+        font-weight: 400 !important;
+    }
 
 
-#circle #pad {
-    stroke: #261f2f !important;
-}
-
-.circle-player .play-icon {
-    fill: #261f2f !important;
-}
-
-.page-icons>li.selected, .mobile .aya.selected {
-    background-color: #3b3149 !important;
-    color: #fff !important;
-}
-
-.ayaNumber {
-    background-color: rgba(0,0,0,0) !important;
-    color: #d7ffd7 !important;
-}
-
-.sign {
-    color: #675c76 !important;
-}
 
 
-#circle #bar {
-    stroke: #66ff84 !important;
-}
+    .circle-player, .circle-player > * {
+        background-color: rgba(0,0,0,0) !important;
+    }
+
+    #circle #disk {
+        fill: #fdf6e3 !important;
+    }
+
+    #circle #pad {
+        stroke: #261f2f !important;
+    }
+
+    .circle-player .play-icon {
+        fill: #261f2f !important;
+    }
+
+    .page-icons>li.selected, .mobile .aya.selected {
+        background-color: #3b3149 !important;
+        color: #fff !important;
+    }
+
+    .ayaNumber, .sign {
+        background-color: rgba(0,0,0,0) !important;
+        color: #8c809c !important;
+    }
+
+    #circle #bar {
+        stroke: #66ff84 !important;
+    }
+
+
