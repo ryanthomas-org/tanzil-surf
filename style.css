@@ -26,3 +26,24 @@
     }
 
 
+
+.circle-player, .circle-player > * {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+
+#circle #disk {
+
+    fill: #fdf6e3 !important;
+}
+
+
+#circle #pad {
+
+    stroke: #261f2f !important;
+}
+
+.circle-player .play-icon {
+    fill: #261f2f !important;
+}
+
