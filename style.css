@@ -17,7 +17,7 @@
     }
 
     .suraHeaderFrame {
-        background: rgba(38, 31, 47, 1) url(./img/sura-frame.png) no-repeat center center !important;
+        background: rgba(38, 31, 47, 1) url("https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/img.svg") no-repeat center center !important;
         background-blend-mode: luminosity !important;
     }
 
