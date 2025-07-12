@@ -1,79 +1,111 @@
+    :root {
+        --foreground-color: #fdf6e3;
+        --line-highlight-bg: #3b3149;
+        --line-highlight-fg: #ffffff;
+        --background-color: #29222e;
+        --ayat-mark-color: #8c809c;
+        --progress-color: #66ff84;
+        --translation-font: "Iosevka Medium", monospace;
+        --quran-font: "Scheherazade New";
+    }
+
     @font-face {
-      font-family: 'Scheherazade New';
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://raw.githubusercontent.com/silnrsi/font-scheherazade/master/references/ScheherazadeNew-Regular.ttf) format('truetype');
+        font-family: 'Scheherazade New';
+        font-style: normal;
+        font-weight: 400;
+        /* Surf wasn't loading ḥarakāt correctly for the default hafs font in our tests */
+        src: url(https://raw.githubusercontent.com/silnrsi/font-scheherazade/master/references/ScheherazadeNew-Regular.ttf) format('truetype');
     }
 
-    .page-icons, .label, div,pre,textarea,body,input,td,tr,p {
-        background-color: #261f2f !important;
-        background-image: none !important;
-        color: #fdf6e3 !important;
+    .ayaNumber, .settings > *, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
+        font-family: var(--translation-font); !important;
     }
 
-    .page-icons>li>a {
-        color: #fdf6e3 !important;
-    }
-
-    h1,h2,h3,h4 {
-        background-color: #261f2f !important;
-        color: #ffe0ff !important;
-    }
-
-    .suraHeaderFrame{
-        background:url('https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/surat.svg') no-repeat center center !important;
-    }
-
-    .ayaNumber, .suraHeaderFrame.ltr, .settings > *, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
-            font-family: "Iosevka Medium", monospace; !important;
+    .suraHeaderFrame.ltr {
+        font-family: var(--translation-font) !important;      
     }
 
     .settings .content select {
-        font-family: "Iosevka Medium" !important;
-        
+        font-family: var(--translation-font) !important;
     }
 
     div.transText .ayaNumber {
-
-        font-family: "Iosevka Medium" !important;
+        font-family: var(--translation-font) !important;
     }
 
     #searchPattern, .searchResults, .qFrameMiddle, .suraHeaderFrame, .transText .bism, .quranText, .page-header, .browse.rtl .content, .browse.rtl .header {
-        font-family: "Scheherazade New" !important;
+        font-family: var(--quran-font) !important;
         font-weight: 400 !important;
     }
 
+    .page-icons, .label, div,pre,textarea,body,input,td,tr,p {
+        background-color: var(--background-color) !important;
+        background-image: none !important;
+        color: var(--foreground-color) !important;
+    }
 
-
+    .page-icons>li>a {
+        color: var(--foreground-color) !important;
+    }
 
     .circle-player, .circle-player > * {
         background-color: rgba(0,0,0,0) !important;
     }
 
     #circle #disk {
-        fill: #fdf6e3 !important;
+        fill: var(--foreground-color) !important;
     }
 
     #circle #pad {
-        stroke: #261f2f !important;
+        stroke: var(--background-color) !important;
     }
 
     .circle-player .play-icon {
-        fill: #261f2f !important;
+        fill: var(--background-color) !important;
     }
 
     .page-icons>li.selected, .mobile .aya.selected {
-        background-color: #3b3149 !important;
-        color: #fff !important;
+        background-color: var(--line-highlight-bg) !important;
+        color: var(--line-highlight-fg) !important;
     }
 
-    .ayaNumber, .sign {
+    .ayaNumber, .sign, .juz-sign {
         background-color: rgba(0,0,0,0) !important;
-        color: #8c809c !important;
+        color: var(--ayat-mark-color) !important;
     }
 
-    #circle #bar {
-        stroke: #66ff84 !important;
+    #circle #bar { /* recitation radial */
+        stroke: var(--progress-color) !important;
+    }
+
+    .highlight, .settings a { /* used in search results, links on settings page */
+        color: var(--progress-color) !important; 
+    }
+
+    .suraHeaderFrame {
+
+        position: relative;
+        color: var(--foreground-color) !important;
+        z-index: 2;
+    }
+
+    .suraHeaderFrame::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        /* Replace default surah header art which doesn't scale well and is designed for white bg */
+        /* Use mask trick to alllow SVG color override, matching configured foreground color */
+
+        mask: url('https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/surat.svg') no-repeat center center;
+        -webkit-mask: url('https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/surat.svg') no-repeat center center;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        background-color: var(--foreground-color) !important;
     }
 
 
