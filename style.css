@@ -1,0 +1,29 @@
+    @font-face {
+      font-family: 'Scheherazade New';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://raw.githubusercontent.com/silnrsi/font-scheherazade/master/references/ScheherazadeNew-Regular.ttf) format('truetype');
+    }
+
+    *,div,pre,textarea,body,input,td,tr,p {
+        background-color: #261f2f !important;
+        background-image: none !important;
+        color: #fdf6e3 !important;
+    }
+
+    h1,h2,h3,h4 {
+        background-color: #261f2f !important;
+        color: #ffe0ff !important;
+    }
+
+    .suraHeaderFrame {
+        background: rgba(38, 31, 47, 1) url(./img/sura-frame.png) no-repeat center center !important;
+        background-blend-mode: luminosity !important;
+    }
+
+    #searchPattern, .searchResults, .qFrameMiddle, .suraHeaderFrame, .quranText .ayaNumber, .transText .bism, .quranText, .page-header, .browse.rtl .content, .browse.rtl .header {
+        font-family: "Scheherazade New" !important;
+        font-weight: 400 !important;
+    }
+
+
