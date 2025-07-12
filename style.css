@@ -24,8 +24,13 @@
         background:url('https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/surat.svg') no-repeat center center !important;
     }
 
-    .ayaNumber, .suraHeaderFrame.ltr, .settings .content select, .settings > *, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
+    .ayaNumber, .suraHeaderFrame.ltr, .settings > *, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
             font-family: "Iosevka Medium", monospace; !important;
+    }
+
+    .settings .content select {
+        font-family: "Iosevka Medium" !important;
+        
     }
 
     div.transText .ayaNumber {
