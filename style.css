@@ -17,7 +17,7 @@
     }
 
     .suraHeaderFrame {
-        background: url("https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/img.png") no-repeat center center !important;
+        background: url("https://raw.githubusercontent.com/ryanthomas-org/tanzil-surf/main/_img.png") no-repeat center center !important;
     }
 
     #searchPattern, .searchResults, .qFrameMiddle, .suraHeaderFrame, .quranText .ayaNumber, .transText .bism, .quranText, .page-header, .browse.rtl .content, .browse.rtl .header {
