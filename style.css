@@ -5,7 +5,7 @@
       src: url(https://raw.githubusercontent.com/silnrsi/font-scheherazade/master/references/ScheherazadeNew-Regular.ttf) format('truetype');
     }
 
-    *,div,pre,textarea,body,input,td,tr,p {
+    .page-icons, .label, div,pre,textarea,body,input,td,tr,p {
         background-color: #261f2f !important;
         background-image: none !important;
         color: #fdf6e3 !important;
@@ -25,6 +25,10 @@
         font-weight: 400 !important;
     }
 
+    .settings .content select, .settings, .search .footer, .settings .header, .page-header.ltr>div, .mobile .transText .aya {
+
+        font-family: "Iosevka Medium" !important;
+    }
 
 
 .circle-player, .circle-player > * {
@@ -39,7 +43,6 @@
 
 
 #circle #pad {
-
     stroke: #261f2f !important;
 }
 
@@ -47,11 +50,21 @@
     fill: #261f2f !important;
 }
 
-.mobile .aya.selected {
+.page-icons>li.selected, .mobile .aya.selected {
     background-color: #3b3149 !important;
     color: #fff !important;
 }
 
 .ayaNumber {
     background-color: rgba(0,0,0,0) !important;
+    color: #d7ffd7 !important;
+}
+
+.sign {
+    color: #675c76 !important;
+}
+
+
+#circle #bar {
+    stroke: #66ff84 !important;
 }
