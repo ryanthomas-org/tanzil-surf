@@ -47,3 +47,11 @@
     fill: #261f2f !important;
 }
 
+.mobile .aya.selected {
+    background-color: #3b3149 !important;
+    color: #fff !important;
+}
+
+.ayaNumber {
+    background-color: rgba(0,0,0,0) !important;
+}
